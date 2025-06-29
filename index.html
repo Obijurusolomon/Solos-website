@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Form Filling</title>
+    <style>
+        body {
+            background-image: url('sample pics.jpeg');
+            background-position: center;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            color: white;
+            padding: 20px;
+        }
+        h1 {
+            color: yellow;
+        }
+        form {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 30px;
+            border-radius: 10px;
+            max-width: 600px;
+            margin: auto;
+            font-size: 20px;
+        }
+        label {
+            display: block;
+            margin-top: 15px;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: none;
+        }
+        input[type="submit"],
+        input[type="reset"] {
+            width: 49%;
+            margin-top: 20px;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        input[type="reset"] {
+            background-color: #f44336;
+        }
+        .gender-group {
+            display: flex;
+            gap: 15px;
+            margin-top: 5px;
+        }
+        .gender-group label {
+            margin-top: 0;
+        }
+        .header-img {
+            vertical-align: middle;
+            margin-left: 10px;
+            border-radius: 50%;
+        }
+        a {
+            color: lightblue;
+            display: block;
+            margin-top: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        MY NAME IS SOLOMON
+        <img src="IMG_8493.jpg" alt="My picture" height="200px" width="200px" class="header-img">
+    </h1>
+
+    <h1>Kindly fill out the form below to test run Solomon's work</h1>
+
+    <form>
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname" placeholder="Type in your first name" required>
+
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname" placeholder="Type in your last name" required>
+
+        <label for="pass">Password:</label>
+        <input type="password" id="pass" name="password" maxlength="4" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" maxlength="11">
+
+        <label for="bdate">Date of Birth:</label>
+        <input type="date" id="bdate" name="birthdate">
+
+        <label>Gender:</label>
+        <div class="gender-group">
+            <label><input type="radio" name="gender" value="male"> Male</label>
+            <label><input type="radio" name="gender" value="female"> Female</label>
+            <label><input type="radio" name="gender" value="others"> Others</label>
+        </div>
+
+        <label for="file">Upload a Passport Photograph:</label>
+        <input type="file" id="file" name="photo">
+
+        <label for="department">Department:</label>
+        <select id="department" name="department">
+            <option value="mathematics">Mathematics</option>
+            <option value="chemistry">Chemistry</option>
+            <option value="physics">Physics</option>
+            <option value="computer science">Computer Science</option>
+            <option value="ITS">ITS</option>
+            <option value="biology">Biology</option>
+            <option value="HKHSE">HKHSE</option>
+        </select>
+
+        <label for="level">Level:</label>
+        <select id="level" name="level">
+            <option value="400">100</option>
+            <option value="300">200</option>
+            <option value="200">300</option>
+            <option value="100">400</option>
+        </select>
+
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
+    </form>
+
+    <a href="mailto:andrewsolomon810@gmail.com">Contact Us</a>
+</body>
+</html>
